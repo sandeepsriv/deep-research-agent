@@ -1,0 +1,66 @@
+# Secrets and local configuration
+.env
+.env.*
+*.env
+!.env.example
+!.env.sample
+!.env.template
+.envrc
+
+# Credentials, keys, and tokens
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+id_dsa
+id_ecdsa
+id_ed25519
+credentials.json
+token.json
+*_credentials.json
+*secret*.json
+*secrets*.json
+service-account*.json
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python tooling caches and reports
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Local app/runtime output
+*.log
+logs/
+.gradio/
+gradio_cached_examples/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
