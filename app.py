@@ -34,5 +34,9 @@ with gr.Blocks(title="Deep Research") as ui:
     query_textbox.submit(run, inputs=query_textbox, outputs=report)
 
 
+def check_passcode(username: str, password: str) -> bool:
+    return password == "6768"
+
+
 if __name__ == "__main__":
-    ui.launch(css=CSS, js=JS, theme=gr.themes.Base())
+    ui.launch(css=CSS, js=JS, theme=gr.themes.Base(), auth=check_passcode, auth_message="Enter any name and the passcode to access Deep Research.")
